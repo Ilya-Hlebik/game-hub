@@ -3,6 +3,7 @@ import {Platform} from "../hooks/useGames";
 import {FaAndroid, FaApple, FaLinux, FaPlaystation, FaWindows, FaXbox} from 'react-icons/fa'
 import {BsGlobe, MdPhoneIphone, SiNintendo} from "react-icons/all";
 import {IconType} from "react-icons";
+import {SiSega} from "react-icons/si";
 
 interface Props {
     platforms: Platform[];
@@ -18,7 +19,8 @@ const PlatformIconList = ({platforms}: Props) => {
         linux: FaLinux,
         android: FaAndroid,
         ios: MdPhoneIphone,
-        web: BsGlobe
+        web: BsGlobe,
+        sega: SiSega,
     }
     return (<HStack marginY={1}>
         {platforms.map((platform) => {
