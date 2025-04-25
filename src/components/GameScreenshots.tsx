@@ -15,10 +15,8 @@ const GameScreenshots = ({gameId}: Props) => {
     }
 
     return <SimpleGrid
-        marginY={5}
         columns={{base: 1, md: 2}}
         spacing={2}
-        padding="10px"
     > {data?.results.map(({image, id}) =>
         <Image key={id} src={image}/>)}
     </SimpleGrid>;
